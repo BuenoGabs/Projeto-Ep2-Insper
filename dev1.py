@@ -39,6 +39,20 @@ def soma_pecas(lista_pecas):
     total = sum(lista_total)
     return total
 
+# Função para verificar posicoes possiveis
+def posicoes_possiveis(lista_mesa, lista_pecas_mao):
+    if lista_mesa == []:
+        return list(range(len(lista_pecas_mao)))
+    ponta_direita = lista_mesa[-1][1]
+    ponta_esquerda = lista_mesa[0][0]
+    lista_posicao = []
+    for i in range(len(lista_pecas_mao)):
+        peca = lista_pecas_mao[i]
+        if peca[0] == ponta_direita or peca[0] == ponta_esquerda or peca[1] == ponta_direita or peca[1] == ponta_esquerda:
+            lista_posicao.append(i)
+    return lista_posicao
+
+
 # Função para adicionar a peça na mesa
 def adiciona_na_mesa(p, lista_mesa):
     if lista_mesa == []:
