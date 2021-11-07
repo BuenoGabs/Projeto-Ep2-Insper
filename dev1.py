@@ -1,3 +1,4 @@
+# Funções experimentais do projeto
 # Função para criar as peças
 def cria_pecas():
     from random import shuffle
