@@ -25,43 +25,6 @@ while continuar:
                 print('MESA: ', lista_mesa)
                 print(f'Você tem {quantidade} peça(s)')
                 escolha_do_jogador = input('Escolha a peça: ')
-
-            
-                
-
-
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     if verifica_ganhador(jogadores) != -1:
         continuar == False
